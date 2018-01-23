@@ -1,0 +1,28 @@
+
+使用页面：sdpk/easyui_xpp/6a6.html
+
+
+-------------------------------------------------------------
+8.7 根据班级uuid查询排课列表
+
+aaQueKeAll
+
+controller:QueKeAllController
+
+Service:
+QueKeAllService
+QueKeAllServiceImpl
+
+QueKeAllDao
+QueKeAllDaoImpl
+
+http://localhost:8080/sdpk/aaQueKeAll?qqiu=list
+
+请求方式:Post
+
+
+请求主体:
+0115查询全校周课不用请求体
+{
+	"claUuid":"全校周课此处暂留"
+}
