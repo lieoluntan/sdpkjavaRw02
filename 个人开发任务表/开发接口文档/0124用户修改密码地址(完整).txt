@@ -38,7 +38,7 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 {
-"uLogUser":"aaa123","uPassWord":"aaa"
+"uLogUser":"aaa123","uPassWord":"aaa","uNewPassWord":"newAAA"
 }
 
 响应：
