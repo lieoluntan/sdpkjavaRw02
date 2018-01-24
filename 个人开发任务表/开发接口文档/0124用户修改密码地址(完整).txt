@@ -1,0 +1,49 @@
+*************************************************************
+
+7、用户访问地址
+
+
+
+命名：
+web.xml中：
+/aaUserPKpass   对应  aaUserPKpassN
+
+包名：com.sdpk.system.controller.UserPKpassController
+
+UserPKpassController
+
+UserPKpassService
+UserPKpassServiceImpl
+
+UserPKpassDao
+UserPKpassDaoImpl
+
+
+-------------------------------------------------------------
+7.0 用户测试
+http://localhost:8080/sdpk/aaUserPKpass?qqiu=test
+请求方法:POST
+
+
+
+-------------------------------------------------------------
+
+7.3 用户修改密码
+http://localhost:8080/sdpk/aaUserPKpass?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uLogUser":"aaa123","uPassWord":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+-------------------------------------------------------------
+
+
