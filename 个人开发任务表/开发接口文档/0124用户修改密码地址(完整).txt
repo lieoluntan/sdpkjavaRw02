@@ -43,7 +43,14 @@ Content-Type: application/json;charset=UTF-8
 
 响应：
 status:200 OK
-{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+{"message":"信息值：成功","qingqiu":"edit修改","data":"edit9001"]}
 -------------------------------------------------------------
 
-
+密码错误响应：
+请求主体:
+{
+"uLogUser":"aaa123","uPassWord":"aaa","uNewPassWord":"newAAA"
+}
+响应：
+status:200 OK
+{"message":"修改密码失败，用户名或密码不正确：用户名(aaa123)密码(aaa)","qingqiu":"edit修改","data":edit9001"]}
