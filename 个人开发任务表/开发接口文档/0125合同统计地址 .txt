@@ -1,0 +1,52 @@
+
+*************************************************************
+
+开发人：刘鑫
+
+时间：2018-01-25
+*************************************************************
+
+7、合同统计地址
+
+
+
+命名：
+web.xml中：
+/aaQueCountCtext   对应  aaQueCountCtextN
+
+包名：com.sdpk.query.controller.QueCountCtextController
+
+QueCountCtextController
+
+QueCountCtextService
+QueCountCtextServiceImpl
+
+QueCountCtextDao
+QueCountCtextDaoImpl
+
+
+-------------------------------------------------------------
+7.0 合同统计测试
+http://localhost:8080/sdpk/aaQueCountCtext?qqiu=test
+请求方法:POST
+
+
+
+-------------------------------------------------------------
+
+7.3 合同课消统计列表
+http://localhost:8080/sdpk/aaQueCountCtext?qqiu=list
+
+请求方法:Get
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":[{"stuUuid":"su001","stuName":"张三","cTextCount":"5","keTotal":"50","keDayBefore":"3","keDayAfter":"47","paikeSum":"49"}]}
+-------------------------------------------------------------
+
