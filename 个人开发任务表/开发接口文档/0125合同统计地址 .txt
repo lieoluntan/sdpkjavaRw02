@@ -37,16 +37,30 @@ http://localhost:8080/sdpk/aaQueCountCtext?qqiu=test
 7.3 合同课消统计列表
 http://localhost:8080/sdpk/aaQueCountCtext?qqiu=list
 
-请求方法:Get
+请求方法:POST
 
 请求头:
 Content-Type: application/json;charset=UTF-8
 
-请求主体:
+请求主体1:
 
 
+{
+"stuUuidList":["u001"]
+}
+
+
+请求主体2:
+{
+"stuUuidList":["u001","u002","u003"]
+}
 响应：
 status:200 OK
 {"message":"信息值：成功","qingqiu":"edit修改","data":[{"stuUuid":"su001","stuName":"张三","cTextCount":"5","keTotal":"50","keDayBefore":"3","keDayAfter":"47","paikeSum":"49"}]}
 -------------------------------------------------------------
+
+
+
+
+
 
