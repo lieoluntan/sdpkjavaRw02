@@ -22,7 +22,7 @@ MonthHeadDaoImpl
 
 
 
-http://localhost:8080/sdpk/aaQueryMonthHead?qqiu=list&empUuid=0158d4bf-edc5-48b8-b364-1d426a94993e&year=2018&&month=01&&today=2018-01-03
+http://localhost:8080/sdpk/aaQueryMonthHead?qqiu=list&empUuid=04c338dd-1323-42e9-9ff4-0ad8a7e93f0e&year=2018&&month=01&&today=2018-01-03
 
 «Î«Û∑Ω∑®£∫Get
 
