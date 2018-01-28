@@ -31,7 +31,10 @@ http://localhost:8080/sdpk/aaQueCountCtext?qqiu=test
 请求方法:POST
 
 
+7.1 合同统计所有学生
+http://localhost:8080/sdpk/aaQueCountCtext?qqiu=stuAll
 
+请求方法:Get
 -------------------------------------------------------------
 
 7.3 合同课消统计列表
@@ -57,7 +60,22 @@ Content-Type: application/json;charset=UTF-8
 响应：
 status:200 OK
 {"message":"信息值：成功","qingqiu":"edit修改","data":[{"stuUuid":"su001","stuName":"张三","cTextCount":"5","keTotal":"50","keDayBefore":"3","keDayAfter":"47","paikeSum":"49"}]}
+
+
 -------------------------------------------------------------
+
+
+half  兼职
+
+full  全职
+
+
+
+
+
+
+
+
 
 
 
