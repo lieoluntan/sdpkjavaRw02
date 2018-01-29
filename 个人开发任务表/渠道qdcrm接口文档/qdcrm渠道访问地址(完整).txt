@@ -1,0 +1,181 @@
+*************************************************************
+
+7、渠道访问地址
+
+
+命名：
+web.xml中：
+/aaDitch   对应servletmapping名：  aaDitchN
+
+包名：com.QDcrm.controller.DitchController
+
+DitchController
+
+DitchService
+DitchServiceImpl
+
+DitchDao
+DitchDaoImpl
+
+7.0 渠道测试
+http://localhost:8080/QDcrm/aaDitch?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 渠道新增
+http://localhost:8080/QDcrm/aaDitch?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 渠道删除
+http://localhost:8080/QDcrm/aaDitch?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+7.3 渠道修改
+http://localhost:8080/QDcrm/aaDitch?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+-------------------------------------------------------------
+
+
+7.4 渠道单个查询
+http://localhost:8080/QDcrm/aaDitch?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+    "message": "信息值：成功",
+    "qingqiu": "list查询列表",
+    "data": [
+        {
+            "uuid": "edit9001",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa"
+        }
+    ]
+}
+
+
+-------------------------------------------------------------
+
+3.5 渠道列表查询(要查出开关字段)
+http://localhost:8080/QDcrm/aaDitch?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+    "message": "信息值：成功",
+    "qingqiu": "list查询列表",
+    "data": [
+        {
+            "uuid": "edit9001",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa"
+        },
+	{
+            "uuid": "edit9002",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa"
+        }
+    ]
+}
+
+
+
+-------------------------------------------------------------
