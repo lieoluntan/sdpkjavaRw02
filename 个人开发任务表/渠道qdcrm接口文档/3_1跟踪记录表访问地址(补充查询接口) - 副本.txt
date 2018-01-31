@@ -19,7 +19,7 @@ QuePageRecordDaoImpl
 
 -------------------------------------------------------------
 
-7.5 跟踪记录表列表查询
+7.5 跟踪记录表列表查询(根据日期recordDate排序降序)
 http://localhost:8080/QDcrm/aaQuePageRecord?qqiu=pageByDitchUid
 
 请求方法:POST
