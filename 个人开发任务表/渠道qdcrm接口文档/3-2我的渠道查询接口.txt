@@ -9,7 +9,7 @@
 命名：
 备注：写在查询包query里,实体类还是用Ditch查询
 web.xml中：
-/aaDitch   对应servletmapping名：  aaDitchN
+/aaDitch   对应servletmapping名：  aaMyDitchN
 
 包名：com.QDcrm.query.controller.MyDitchController
 
@@ -23,7 +23,7 @@ MyDitchDaoImpl
 
 
 
-http://localhost:8080/sdpk/aaMyDitch?qqiu=list&&empUuid=e001
+http://localhost:8080/QDcrm/aaMyDitch?qqiu=list&&empUuid=e001
 
 关系说明：通过empUuid查t_ditch，查出这个empUuid的所有渠道
 
