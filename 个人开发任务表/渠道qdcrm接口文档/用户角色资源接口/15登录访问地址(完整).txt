@@ -1,0 +1,45 @@
+*************************************************************
+
+7、登录访问地址
+
+QDcrm
+命名
+web.xml里
+
+/aaDengLu  对应servlet名称  aaDengLuN
+
+7.0 登录测试
+http://localhost:8080/QDcrm/aaDengLu?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 登录
+http://localhost:8080/QDcrm/aaDengLu?qqiu=denglu
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"uLogUser":"aaa","uPassWord":"aaa","uName":"nnn"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
