@@ -3,8 +3,20 @@
 角色资源测试说明：
 ------------------------------------------------------------
 1 角色资源新增
-http://localhost:8080/QDcrm/aaRoleResource?qqiu=add     **********(角色新增)测试已经通过（刘鑫2018-02-02）
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=add     **********(角色资源新增)测试已经通过（刘鑫2018-02-02）
 
 2 角色资源删除
-http://localhost:8080/QDcrm/aaRoleResource?qqiu=delete    **********(角色新增)测试已经通过（刘鑫2018-02-02）
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=delete    **********(角色资源删除)测试已经通过（刘鑫2018-02-02）
+问题说明:解决角色资源删除时不能根据uuid删除的错误
 
+3 角色资源修改
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=edit     ***********(角色资源修改)测试已经通过（刘鑫2018-02-02）
+
+4 角色资源单个查询
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=getOne       *************(角色资源单个修改)测试已经通过（刘鑫2018-02-02）
+
+5 角色资源列表查询
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=list         **************(角色资源列表查询)测试已经通过（刘鑫2018-02-02）
+
+6 角色资源批量添加
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=add_batch       **********(角色资源批量添加)测试已经通过（刘鑫2018-02-02）

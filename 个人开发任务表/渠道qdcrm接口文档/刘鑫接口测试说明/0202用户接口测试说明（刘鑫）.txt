@@ -4,3 +4,17 @@
 ------------------------------------------------------------
 
 
+1 用户新增
+http://localhost:8080/QDcrm/aaUserPK?qqiu=add		***********(用户新增)测试已通过(刘鑫2018-02-02)
+
+2 用户删除
+http://localhost:8080/QDcrm/aaUserPK?qqiu=delete	***********(用户删除)测试已通过(刘鑫2018-02-02)
+
+3 用户修改
+http://localhost:8080/QDcrm/aaUserPK?qqiu=edit		***********(用户修改)测试已通过(刘鑫2018-02-02)
+
+4 用户单个查询
+http://localhost:8080/QDcrm/aaUserPK?qqiu=getOne	***********(用户单个查询)测试已通过(刘鑫2018-02-02)
+
+5 用户列表查询
+http://localhost:8080/QDcrm/aaUserPK?qqiu=list		***********(用户列表查询)测试已通过(刘鑫2018-02-02)

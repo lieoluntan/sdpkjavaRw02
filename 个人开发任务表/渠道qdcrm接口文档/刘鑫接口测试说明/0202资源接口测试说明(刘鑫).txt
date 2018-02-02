@@ -1,0 +1,18 @@
+
+1 资源新增
+http://localhost:8080/QDcrm/aaResource?qqiu=add		************(资源新增)测试已通过(刘鑫2018-02-02)
+
+2 资源删除
+http://localhost:8080/QDcrm/aaResource?qqiu=delete	************(资源删除)测试已通过(刘鑫2018-02-02)
+
+3 资源修改
+http://localhost:8080/QDcrm/aaResource?qqiu=edit	************(资源修改)测试已通过(刘鑫2018-02-02)
+
+4 资源单个查询
+http://localhost:8080/QDcrm/aaResource?qqiu=getOne	************(资源单个查询)测试已通过(刘鑫2018-02-02)
+
+5 资源列表查询
+http://localhost:8080/QDcrm/aaResource?qqiu=list	************(资源列表查询)测试已通过(刘鑫2018-02-02)
+
+6 批量添加
+http://localhost:8080/QDcrm/aaResource?qqiu=add_batch	************(批量添加)测试已通过(刘鑫2018-02-02)
