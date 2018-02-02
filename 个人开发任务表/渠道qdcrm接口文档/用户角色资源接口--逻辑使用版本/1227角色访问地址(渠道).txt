@@ -1,0 +1,115 @@
+*************************************************************
+
+7、角色访问地址
+
+
+7.0 角色测试
+http://localhost:8080/QDcrm/aaRole?qqiu=test
+
+QDcrm
+
+
+
+-------------------------------------------------------------
+
+7.1 角色新增
+http://localhost:8080/QDcrm/aaRole?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"name":"aaa","rsList":["A","Aa","B"]
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 角色删除
+http://localhost:8080/QDcrm/aaRole?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除"}
+-------------------------------------------------------------
+
+7.3 角色修改
+http://localhost:8080/QDcrm/aaRole?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123","rsList":["A","Aa","B"]
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+-------------------------------------------------------------
+
+
+7.4 角色单个查询
+http://localhost:8080/QDcrm/aaRole?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","oddNum":"aaa","stuUuid":"aaaID","campus":"aaa school","account":"aaa grade","operator":"aaa phone","fee":"aaa date","feeType":"aaa parentName","feeMode":"aaa parentPhone","itemName":"aaa address","amount":"aaa remark"}]
+
+}
+
+
+-------------------------------------------------------------
+
+3.5 角色列表查询
+http://localhost:8080/QDcrm/aaRole?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","name":"a","rsList":["A","Aa","B"]},{"uuid":"a","name":"a","rsList":["A","Aa","B"]}]
+}
+
+
+
+-------------------------------------------------------------

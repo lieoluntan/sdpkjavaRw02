@@ -1,0 +1,136 @@
+*************************************************************
+******************************************************
+接口开发人：薛人杰
+更新日期：2018-01-11
+******************************************************
+
+
+7、角色资源访问地址
+
+
+7.0 角色资源测试
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=test
+
+
+QDcrm
+
+-------------------------------------------------------------
+
+7.1 角色资源新增
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+    "roleid": "aaa",
+    "resourceid": "aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：e7026884-b36f-4eb3-bae0-686c322ba269","qingqiu":"add新增","data":["e7026884-b36f-4eb3-bae0-686c322ba269"]}
+-------------------------------------------------------------
+
+7.2 角色资源删除
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+    "uuid": "e7026884-b36f-4eb3-bae0-686c322ba269"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除e7026884-b36f-4eb3-bae0-686c322ba269","data":["e7026884-b36f-4eb3-bae0-686c322ba269"]}
+-------------------------------------------------------------
+
+7.3 角色资源修改
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+{
+    "uuid": "aaa",
+    "roleid": "bbb",
+    "resourceid": "aaa"
+}
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["aaa"]}
+-------------------------------------------------------------
+
+
+7.4 角色资源单个查询
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+    "uuid": "aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"getOne查询单条记录","data":[{"uuid":"aaa","roleid":"aaa","resourceid":"bbb"}]}
+
+-------------------------------------------------------------
+
+3.5 角色资源列表查询
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+{"message":"信息值：成功","qingqiu":"list查询列表","data":[{"uuid":"aaa","roleid":"aaa","resourceid":"bbb"}]}
+
+
+-------------------------------------------------------------
+角色资源批量添加：
+http://localhost:8080/QDcrm/aaRoleResource?qqiu=add_batch
+
+请求方法：post
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+请求主体:
+[
+    {
+        "roleid": "aa1",
+        "resourceid": "aa2"
+    },
+    {
+        "roleid": "aa3",
+        "resourceid": "aa4"
+    },
+    {
+        "roleid": "aa5",
+        "resourceid": "aa6"
+    }
+]
+响应：
+{"message":"信息值：成功插入数量3","qingqiu":"add_batch查询列表","data":[]}

@@ -1,0 +1,136 @@
+*************************************************************
+******************************************************
+接口开发人：
+更新日期：2018-01-11
+******************************************************
+
+QDcrm
+
+7、资源访问地址
+
+
+7.0 资源测试
+http://localhost:8080/QDcrm/aaResource?qqiu=test
+
+
+
+
+-------------------------------------------------------------
+
+7.1 资源新增
+http://localhost:8080/QDcrm/aaResource?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"name":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 资源删除
+http://localhost:8080/QDcrm/aaResource?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除"}
+-------------------------------------------------------------
+
+7.3 资源修改
+http://localhost:8080/QDcrm/aaResource?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+-------------------------------------------------------------
+
+
+7.4 资源单个查询
+http://localhost:8080/QDcrm/aaResource?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","name":"aaa"}]
+
+}
+
+
+-------------------------------------------------------------
+
+3.5 资源列表查询
+http://localhost:8080/QDcrm/aaResource?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","name":"a"}]
+}
+-------------------------------------------------------------
+批量添加：
+http://localhost:8080/QDcrm/aaResource?qqiu=add_batch
+
+请求方法：post
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+请求主体:
+[
+    {
+        "name": "aa1"
+    },
+    {
+        "name": "aa2"
+    },
+    {
+        "name": "aa1"
+    }
+]

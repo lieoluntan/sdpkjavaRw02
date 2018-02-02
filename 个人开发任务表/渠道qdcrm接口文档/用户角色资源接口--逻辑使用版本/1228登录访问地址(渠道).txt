@@ -1,0 +1,40 @@
+*************************************************************
+******************************************************
+接口开发人：
+更新日期：2018-01-11
+******************************************************
+
+QDcrm
+
+
+7、登录访问地址
+http://localhost:8080/QDcrm/5a1.html
+
+7.0 登录测试
+http://localhost:8080/QDcrm/aaDengLu?qqiu=test
+
+请求方法:POST Get 都可以
+-------------------------------------------------------------
+
+7.1 登录
+http://localhost:8080/QDcrm/aaDengLu?qqiu=denglu
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"uLogUser":"a8","uPassWord":"a8"
+}
+
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"登陆","data":[true,{"uLogUser":"aaa","uName":"王老师","roleList":["roleuuid1","roleuuid2"],"rsList":["A","Aa","Ba"]}]}
+
+{"message":"信息值：失败","qingqiu":"denglu登录","data":[false,{}]}
+-------------------------------------------------------------
+

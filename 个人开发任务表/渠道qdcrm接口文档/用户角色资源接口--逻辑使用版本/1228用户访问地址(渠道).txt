@@ -1,0 +1,138 @@
+*************************************************************
+******************************************************
+接口开发人：
+更新日期：2018-01-11
+******************************************************
+
+QDcrm
+
+
+
+7、用户访问地址
+http://localhost:8080/QDcrm/5a1.html
+
+7.0 用户测试
+http://localhost:8080/QDcrm/aaUserPK?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 用户新增
+http://localhost:8080/QDcrm/aaUserPK?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"uLogUser":"aaa1","uPassWord":"aaa","uName":"nnn","empUuid":"www","roleList":["role1","role2"]
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 用户删除
+http://localhost:8080/QDcrm/aaUserPK?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除"}
+-------------------------------------------------------------
+
+7.3 用户修改
+http://localhost:8080/QDcrm/aaUserPK?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"bb1e8f8b-ee04-475e-87bb-4192f7548687",
+"uLogUser":"aaa123","uPassWord":"aaa","uName":"aaa","empUuid":"test","roleList":["role1","role2"]
+}
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+-------------------------------------------------------------
+
+
+7.4 用户单个查询
+http://localhost:8080/QDcrm/aaUserPK?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","oddNum":"aaa","stuUuid":"aaaID","campus":"aaa school","account":"aaa grade","operator":"aaa phone","fee":"aaa date","feeType":"aaa parentName","feeMode":"aaa parentPhone","itemName":"aaa address","amount":"aaa remark"}]
+
+}
+
+
+-------------------------------------------------------------
+
+7.5 用户列表查询
+http://localhost:8080/QDcrm/aaUserPK?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[
+{
+"uuid":"edit9001",
+"uLogUser":"aaa123","uPassWord":"aaa","uName":"aaa","role":["role1","role2"]
+},
+{
+"uuid":"edit9001",
+"uLogUser":"aaa123","uPassWord":"aaa","uName":"aaa","role":["role3","role4"]
+}
+
+]}
+
+
+
+-------------------------------------------------------------
