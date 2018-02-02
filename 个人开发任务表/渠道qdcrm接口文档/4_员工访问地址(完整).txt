@@ -62,7 +62,7 @@ Content-Type: application/json;charset=UTF-8
 {
 "uuid":"edit9001",
 "name":"aaa123","empNum":"aaa","phone":"aaa","depart":"aaa",
-"job":"aaa","remark":"aaa"
+"job":"aaa","remark":"aaa","claTeacher":"aaa"
 }
 
 œÏ”¶£∫
