@@ -1,0 +1,18 @@
+
+1 员工新增
+http://localhost:8080/QDcrm/aaEmp?qqiu=add		*********(员工新增)测试已通过(刘鑫2018-02-02)
+
+2 员工删除
+http://localhost:8080/QDcrm/aaEmp?qqiu=delete		*********(员工删除)测试已通过(刘鑫2018-02-02)
+
+3 员工修改
+http://localhost:8080/QDcrm/aaEmp?qqiu=edit		*********(员工修改)测试已通过(刘鑫2018-02-02)
+
+4 员工单个查询
+http://localhost:8080/QDcrm/aaEmp?qqiu=getOne		*********(员工单个查询)测试已通过(刘鑫2018-02-02)
+
+5 员工列表查询
+http://localhost:8080/QDcrm/aaEmp?qqiu=list		*********(员工列表查询)测试已通过(刘鑫2018-02-02)
+
+6 员工班主任查询
+http://localhost:8080/QDcrm/aaEmp?qqiu=claTeaList	*********(员工班主任查询)测试已通过(刘鑫2018-02-02)
