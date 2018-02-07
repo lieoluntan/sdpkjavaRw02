@@ -1,0 +1,45 @@
+
+
+******************************************************
+接口开发人：谢平平
+更新日期：2018-01-24
+******************************************************
+
+
+命名：
+web.xml中：
+/aaMyContrtext   对应  aaMyContrtextN
+
+包名：
+
+MyContrtextController
+
+MyContrtextService
+MyContrtextServiceImpl
+
+MyContrtextDao
+MyContrtextDaoImpl
+-------------------------------------------------------------
+
+测试：
+http://localhost:8080/sdpk/aaMyContrtext?qqiu=test
+
+3 我的合同列表查询
+
+http://localhost:8080/sdpk/aaMyContrtext?qqiu=speedMyList&&empUuid=04c338dd-1323-42e9-9ff4-0ad8a7e93f0e
+
+关系说明：通过empUuid查员工班级关联表，查出关联表后，通过班级Uuid查班级合同关联表，查出所有合同，去重
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+{"message":"信息值,成功","qingqiu":"我的合同浏览","data":[{"uuid":"05f9a0fe-17b5-4345-a787-bb9c2816cc48","cNum":"合同bh002","stuUuid":"张三","cDate":"2017-11-19","org":"请输入校区组织","totalCount":"6","totalPrice":"8100","countA":"3","delPriceA":"0","countGiveA":"0","sumCountA":"3","sumPriceA":"3600","onePriceB":"1500","countB":"3","delPriceB":"0","countGiveB":"0","sumCountB":"3","sumPriceB":"4500"},{"uuid":"46d1234a-8df7-4d7d-8a34-8ab51a8bb2f3","cNum":"李四合同","stuUuid":"李四","cDate":"2017-12-15","org":"共和路校区","totalCount":"210","totalPrice":"27000","countA":"10","delPriceA":"0","countGiveA":"100","sumCountA":"110","sumPriceA":"12000","onePriceB":"1500","countB":"10","delPriceB":"0","countGiveB":"90","sumCountB":"100","sumPriceB":"15000"}]}
+
+
+-------------------------------------------------------------

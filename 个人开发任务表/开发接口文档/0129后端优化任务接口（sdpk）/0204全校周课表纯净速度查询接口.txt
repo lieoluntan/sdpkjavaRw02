@@ -1,0 +1,17 @@
+
+
+
+
+全校周课表月查询
+
+http://localhost:8080/sdpk/aaQueKeAll?qqiu=monthList&year=2018&month=01&today=2018-01-03
+方式:GET
+
+
+全校周课表所有数据查询
+http://localhost:8080/sdpk/aaQueKeAll?qqiu=speedList
+
+请求方式：GET
+
+
+
