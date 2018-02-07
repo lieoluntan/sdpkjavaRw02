@@ -1,0 +1,62 @@
+
+
+******************************************************
+接口开发人：谢平平
+更新日期：2018-01-24
+******************************************************
+
+
+命名：
+web.xml中：
+/aaMyContrtext   对应  aaMyContrtextN
+
+包名：
+
+MyContrtextController(已存在，就是我的合同-合同和金额版本)
+
+MyContrtextService
+MyContrtextServiceImpl
+
+MyContrtextDao
+MyContrtextDaoImpl
+-------------------------------------------------------------
+
+测试：
+http://localhost:8080/sdpk/aaMyContrtext?qqiu=test
+
+3 所有合同列表查询
+
+http://localhost:8080/sdpk/aaMyContrtext?qqiu=nameTcnameList
+
+关系说明：提升所有合同的速度查询方法（纯净合同列表，不带金额）
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+
+{
+
+    "message":"信息值,成功",
+    "qingqiu":"我的合同浏览",
+    "data":[
+        {
+            "uuid":"46d1234a-8df7-4d7d-8a34-8ab51a8bb2f3",
+            "nameTcname":"李四c6676"
+            
+        },
+        {
+            "uuid":"46d1234a-8df7-4d7d-8a34-8ab51a8bb2f3",
+            "nameTcname":"李四c6676"
+            
+        }
+    ]
+
+}
+
+-------------------------------------------------------------
