@@ -1,0 +1,171 @@
+*************************************************************
+
+7、手机号码表访问地址
+
+Dphone
+命名：
+web.xml中：
+/aaDphone   对应  aaDphoneN
+
+包名：com.QDcrm.controller.DphoneController
+
+DphoneController
+
+DphoneService
+DphoneServiceImpl
+
+DphoneDao
+DphoneDaoImpl
+
+7.0 手机号码表测试
+http://localhost:8080/QDcrm/aaDphone?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 手机号码表新增
+http://localhost:8080/QDcrm/aaDphone?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"phoneNO":"aaa","ditchUuid":"aaa","empDitUuid":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2.1 手机号码表单个删除
+http://localhost:8080/QDcrm/aaDphone?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+
+7.2.2 手机号码表删除（根据ditchUuid）
+http://localhost:8080/QDcrm/aaDphone?qqiu=deleteByDitchUid
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"ditchUuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"uu001渠道delete删除8条","data":["uu001渠道delete删除8条"]}
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+7.5 手机号码表列表查询
+http://localhost:8080/QDcrm/aaDphone?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"},{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+
+7.5 手机号码表列表查询(根据渠道uuid)
+http://localhost:8080/QDcrm/aaDphone?qqiu=listByDitchUid
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"},{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+7.6 手机号码表列表查询(根据电话号码)+(要多返回)
+http://localhost:8080/QDcrm/aaDphone?qqiu=listByphoneNO
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"phoneNO":"18700001111"
+}
+
+响应1：
+status:200 OK
+{
+"message":"查询完成：存在手机18700001111",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"},{"uuid":"edit9001","ditchUuid":"aaa123","ditchName":"渠道A","empDitUuid":"aaa","empDitName":"aaa"}]
+}
+
+
+响应2：
+status:200 OK
+{
+"message":"查询完成：18700001111---不存在",
+"qingqiu":"list查询列表",
+"data":[]
+}
+
+
