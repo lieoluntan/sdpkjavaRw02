@@ -1,6 +1,6 @@
 
 
-1、班主任今日课(优化班级名实时)
+1、班主任今日课
 
 http://localhost:8080/sdpk/aaQueKeHead?qqiu=list
 
@@ -11,7 +11,7 @@ http://localhost:8080/sdpk/aaQueKeHead?qqiu=list
 }
 
 
-2、老师今日课(优化班级名实时)
+2、老师今日课
 
 http://localhost:8080/sdpk/aaQueKeMy?qqiu=list
 
@@ -22,16 +22,16 @@ http://localhost:8080/sdpk/aaQueKeMy?qqiu=list
 }
 
 
-3、我的月课--班主任(优化班级名实时)
+3、我的月课--班主任
 
-http://localhost:8080/sdpk/aaQueryMonthHead?qqiu=list&empUuid=04c338dd-1323-42e9-9ff4-0ad8a7e93f0e&year=2018&&month=01&&today=2018-01-03
+http://localhost:8080/sdpk/aaQueryMonthHead?qqiu=list&empUuid=0158d4bf-edc5-48b8-b364-1d426a94993e&year=2018&&month=01&&today=2018-01-03
 
 请求方法：Get
 
 请求主体:无
 
 
-4、我的月课--老师(优化班级名实时)
+4、我的月课--老师
 
 
 http://localhost:8080/sdpk/aaQuery?qqiu=list&empUuid=04c338dd-1323-42e9-9ff4-0ad8a7e93f0e&year=2018&&month=01&&today=2018-01-03
@@ -40,22 +40,17 @@ http://localhost:8080/sdpk/aaQuery?qqiu=list&empUuid=04c338dd-1323-42e9-9ff4-0ad
 
 请求主体:无
 
-所有老师月课(优化班级名实时)
+所有老师月课
 http://localhost:8080/sdpk/aaQuery?qqiu=list&empUuid=allGet&year=2018&&month=01&&today=2018-01-03
 
 
-5、全校今日课(优化班级名实时)
-http://localhost:8080/sdpk/aaQueKe?qqiu=list
+5、全校今日课
+/sdpk/aaQueKe?qqiu=list
 
-请求主体:
-{
-	"keDateTime":"2018-01-27"
-}
-
-6、老师课消统计(优化班级名实时---同4、我的月课--老师)
+6、老师课消统计
 '/sdpk/aaQuery?qqiu=list&empUuid='+teaValue+'&year='+year+'&&month='+month+'&&today='+currentTime;
 
-7、全校课表查询(优化班级名实时)
+7、全校课表查询
 
 /sdpk/aaQueKeAll?qqiu=list
 
