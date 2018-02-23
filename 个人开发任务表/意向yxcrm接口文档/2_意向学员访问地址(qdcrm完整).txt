@@ -102,8 +102,28 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 {
-"uuid":"edit9001",
-"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa","moneyRate":"aaa"
+    "uuid":"31a92e3e-83a8-460e-92dd-97698b99f9ca",
+    "name":"aaac",
+    "sex":"aaac",
+    "phone":"aaac",
+    "grade":"aaac",
+    "school":"aaac",
+    "weixin":"aaac",
+    "parentRela":"aaac",
+    "parentName":"aaac",
+    "parentPhone":"aaac",
+    "parentWeixin":"aaac",
+
+    "parentRela2":"aaac",
+    "parentName2":"aaac",
+    "parentPhone2":"aaac",
+    "parentWeixin2":"aaac",
+
+    "empUuid":"aaac",
+    "rank":"aaac",
+    "source":"aaac",
+    "courseYX":"aaac"
+
 }
 
 响应：
