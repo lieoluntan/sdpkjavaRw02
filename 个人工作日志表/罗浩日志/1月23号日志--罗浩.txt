@@ -1,4 +1,4 @@
-工作任务：开发环境搭建Git,myeclipse11,jdk1.6,Tomcat6,项目运行完成
+工作任务：开发环境搭建Git,myeclipse11,jdk1.6,Tomcat6,项目运行完成,web测试完成。
 
           罗浩 完成进度：已完成 
 
