@@ -1,5 +1,5 @@
 *************************************************************
-
+userdb_yxcrm
 7、意向学员访问地址
 
 YXcrm
@@ -52,16 +52,16 @@ Content-Type: application/json;charset=UTF-8
     "phone":"aaa",
     "grade":"aaa",
     "school":"aaa",
-    "weixin":"aaa",
+    "weixin":"p111",
     "parentRela":"aaa",
     "parentName":"aaa",
     "parentPhone":"aaa",
-    "parentWeixin":"aaa",
+    "parentWeixin":"p222",
 
     "parentRela2":"aaa",
     "parentName2":"aaa",
     "parentPhone2":"aaa",
-    "parentWeixin2":"aaa",
+    "parentWeixin2":"p333",
 
     "empUuid":"aaa",
     "rank":"aaa",
