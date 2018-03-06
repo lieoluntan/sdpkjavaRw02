@@ -74,7 +74,7 @@ status:200 OK
 
 -------------------------------------------------------------
 
-7.2.2 微信号码表删除（根据ditchUuid）
+7.2.2 微信号码表删除（根据YXstuUid）
 http://localhost:8080/YXcrm/aaDweixin?qqiu=deleteByYXstuUid
 
 请求方法:POST

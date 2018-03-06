@@ -72,8 +72,8 @@ status:200 OK
 
 -------------------------------------------------------------
 
-7.2.2 手机号码表删除（根据ditchUuid）
-http://localhost:8080/YXcrm/aaDphone?qqiu=deleteByDitchUid
+7.2.2 手机号码表删除（根据YXstuUid）
+http://localhost:8080/YXcrm/aaDphone?qqiu=deleteByYXstuUid
 
 请求方法:POST
 
