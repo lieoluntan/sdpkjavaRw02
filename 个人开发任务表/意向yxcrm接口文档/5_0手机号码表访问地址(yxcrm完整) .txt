@@ -81,7 +81,7 @@ http://localhost:8080/YXcrm/aaDphone?qqiu=deleteByYXstuUid
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"ditchUuid":"uu001"}
+{"yxstuUuid":"uu001"}
 
 响应：
 status:200 OK
