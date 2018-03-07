@@ -67,7 +67,9 @@ Content-Type: application/json;charset=UTF-8
     "rank":"aaa",
     "source":"aaa",
     "courseYX":"aaa",
-    "studentID": 001
+    "studentID": 001,
+    "userUuid":"aaa",
+    "userName":"AAA"
     
 
 }
@@ -89,7 +91,11 @@ http://localhost:8080/YXcrm/aaYXstudent?qqiu=delete
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"uu001"}
+{
+ "uuid":"uu001",
+ "userUuid":"aaa",
+ "userName":"AAA"
+}
 
 响应：
 status:200 OK
@@ -127,7 +133,9 @@ Content-Type: application/json;charset=UTF-8
     "rank":"aaac",
     "source":"aaac",
     "courseYX":"aaac",
-    "studentID":001
+    "studentID":001,
+    "userUuid":"aaa",
+    "userName":"AAA"
 
 }
 
