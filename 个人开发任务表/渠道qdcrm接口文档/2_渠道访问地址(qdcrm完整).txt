@@ -44,7 +44,9 @@ Content-Type: application/json;charset=UTF-8
 请求主体:
 
 {
-"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa","moneyRate":"aaa"
+"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa","moneyRate":"aaa",
+    "userUuid":"aaa",
+    "userName":"AAA"
 }
 
 响应：
@@ -61,7 +63,9 @@ http://localhost:8080/QDcrm/aaDitch?qqiu=delete
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"uu001"}
+{"uuid":"uu001",
+    "userUuid":"aaa",
+    "userName":"AAA"}
 
 响应：
 status:200 OK
@@ -79,7 +83,9 @@ Content-Type: application/json;charset=UTF-8
 请求主体:
 {
 "uuid":"edit9001",
-"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa","moneyRate":"aaa"
+"name":"aaa","sex":"aaa","phone":"aaa","weixin":"aaa","company":"aaa","job":"aaa","empUuid":"aaa","rank":"aaa","source":"aaa","remark":"aaa","moneyRate":"aaa",
+    "userUuid":"aaa",
+    "userName":"AAA"
 }
 
 响应：
