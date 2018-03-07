@@ -1,6 +1,6 @@
 *************************************************************
 YXcrm
-7、部门访问地址
+7、学生日志访问地址
 Logstu
 
 命名：
@@ -17,7 +17,7 @@ LogstuServiceImpl
 LogstuDao
 LogstuDaoImpl
 
-7.0 部门测试
+7.0 学生日志测试
 http://localhost:8080/YXcrm/aaLogstu?qqiu=test
 
 请求方法:POST
@@ -33,7 +33,7 @@ status:200 OK
 {"message":"信息值：默认","qingqiu":"请求值：默认"}
 -------------------------------------------------------------
 
-7.1 部门新增
+7.1 学生日志新增
 http://localhost:8080/YXcrm/aaLogstu?qqiu=add
 
 请求方法:POST
@@ -52,7 +52,7 @@ status:200 OK
 {"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
 -------------------------------------------------------------
 
-7.2 部门删除
+7.2 学生日志删除
 http://localhost:8080/YXcrm/aaLogstu?qqiu=delete
 
 请求方法:POST
@@ -68,7 +68,7 @@ status:200 OK
 {"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
 -------------------------------------------------------------
 
-7.3 部门修改
+7.3 学生日志修改
 http://localhost:8080/YXcrm/aaLogstu?qqiu=edit
 
 请求方法:POST
@@ -88,7 +88,7 @@ status:200 OK
 -------------------------------------------------------------
 
 
-7.4 部门单个查询
+7.4 学生日志单个查询
 http://localhost:8080/YXcrm/aaLogstu?qqiu=getOne
 
 请求方法:POST
@@ -112,7 +112,7 @@ status:200 OK
 
 -------------------------------------------------------------
 
-3.5 部门列表查询
+3.5 学生日志列表查询
 http://localhost:8080/YXcrm/aaLogstu?qqiu=list
 
 请求方法:GET
