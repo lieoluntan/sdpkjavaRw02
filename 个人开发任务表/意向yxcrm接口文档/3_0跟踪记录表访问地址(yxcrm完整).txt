@@ -74,7 +74,7 @@ status:200 OK
 -------------------------------------------------------------
 
 7.2.2 跟踪记录表删除（根据ditchUuid）
-http://localhost:8080/YXcrm/aaRecord?qqiu=deleteByDitchUid
+http://localhost:8080/YXcrm/aaRecord?qqiu=deleteByYxstuUid
 
 请求方法:POST
 
@@ -82,7 +82,7 @@ http://localhost:8080/YXcrm/aaRecord?qqiu=deleteByDitchUid
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"ditchUuid":"uu001",
+{"yxstuUuid":"uu001",
     "userUuid":"aaa",
     "userName":"AAA"}
 
@@ -171,7 +171,7 @@ http://localhost:8080/YXcrm/aaRecord?qqiu=listByDitchUid
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-
+{"yxstuUuid":"uu001"}
 
 响应：
 status:200 OK
