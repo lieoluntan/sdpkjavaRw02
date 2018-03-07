@@ -1,0 +1,86 @@
+*************************************************************
+QDcrm
+7、学生日志访问地址
+LogGX
+
+命名：
+web.xml中：
+/aaLogGX   对应  aaLogGXN
+
+包名：com.QDcrm.controller.LogGXController
+
+LogGXController
+
+LogGXService
+LogGXServiceImpl
+
+LogGXDao
+LogGXDaoImpl
+
+7.0 学生日志测试
+http://localhost:8080/QDcrm/aaLogGX?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+7.2 学生日志删除
+http://localhost:8080/QDcrm/aaLogGX?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+
+
+-------------------------------------------------------------
+
+3.5 学生日志列表查询
+http://localhost:8080/QDcrm/aaLogGX?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：做参考
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
