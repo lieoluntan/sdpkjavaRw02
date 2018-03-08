@@ -64,7 +64,9 @@ http://localhost:8080/YXcrm/aaRecord?qqiu=delete
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"uu001"}
+{"uuid":"uu001",
+    "userUuid":"aaa",
+    "userName":"AAA"}
 
 响应：
 status:200 OK
