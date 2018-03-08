@@ -73,7 +73,7 @@ status:200 OK
 
 -------------------------------------------------------------
 
-7.2.2 跟踪记录表删除（根据ditchUuid）
+7.2.2 跟踪记录表删除（根据ditchUuid）***************
 http://localhost:8080/YXcrm/aaRecord?qqiu=deleteByYxstuUid
 
 请求方法:POST
@@ -162,8 +162,8 @@ status:200 OK
 
 -------------------------------------------------------------
 
-7.5 跟踪记录表列表查询
-http://localhost:8080/YXcrm/aaRecord?qqiu=listByDitchUid
+7.5 跟踪记录表列表查询***************
+http://localhost:8080/YXcrm/aaRecord?qqiu=listByYxstuUid
 
 请求方法:GET
 
