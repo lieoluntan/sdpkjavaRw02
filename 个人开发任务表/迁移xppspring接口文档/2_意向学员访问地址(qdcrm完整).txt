@@ -1,0 +1,321 @@
+*************************************************************
+userdb_xppspring
+7、意向学员访问地址
+xppspring
+xppspring
+
+命名：
+web.xml中：
+/aaYXstudent   对应servletmapping名：  aaYXstudentN
+
+包名：com.xppspring.controller.YXstudentController
+
+YXstudentController
+
+YXstudentService
+YXstudentServiceImpl
+
+YXstudentDao
+YXstudentDaoImpl
+
+7.0 意向学员测试
+http://localhost:8080/xppspring/aaYXstudent?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 意向学员新增
+http://localhost:8080/xppspring/aaYXstudent?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+{
+
+    "name":"aaa",
+    "sex":"aaa",
+    "phone":"aaa",
+    "grade":"aaa",
+    "school":"aaa",
+    "weixin":"p111",
+    "parentRela":"aaa",
+    "parentName":"aaa",
+    "parentPhone":"aaa",
+    "parentWeixin":"p222",
+
+    "parentRela2":"aaa",
+    "parentName2":"aaa",
+    "parentPhone2":"aaa",
+    "parentWeixin2":"p333",
+
+    "empUuid":"aaa",
+    "rank":"aaa",
+    "source":"aaa",
+    "courseYX":"aaa",
+    "studentID": 001
+    
+
+}
+
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+
+备份：
+-------------------------------------------------------------
+
+7.2 意向学员删除
+http://localhost:8080/xppspring/aaYXstudent?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+7.3 意向学员修改
+http://localhost:8080/xppspring/aaYXstudent?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+    "uuid":"31a92e3e-83a8-460e-92dd-97698b99f9ca",
+    "name":"aaac",
+    "sex":"aaac",
+    "phone":"aaac",
+    "grade":"aaac",
+    "school":"aaac",
+    "weixin":"aaac",
+    "parentRela":"aaac",
+    "parentName":"aaac",
+    "parentPhone":"aaac",
+    "parentWeixin":"aaac",
+
+    "parentRela2":"aaac",
+    "parentName2":"aaac",
+    "parentPhone2":"aaac",
+    "parentWeixin2":"aaac",
+
+    "empUuid":"aaac",
+    "rank":"aaac",
+    "source":"aaac",
+    "courseYX":"aaac",
+    "studentID":001
+
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+-------------------------------------------------------------
+
+
+7.4 意向学员单个查询
+http://localhost:8080/xppspring/aaYXstudent?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+    "message": "信息值：成功",
+    "qingqiu": "list查询列表",
+    "data": [
+        {
+            "uuid": "edit9001",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa","moneyRate":"aaa"
+        }
+    ]
+}
+
+
+-------------------------------------------------------------
+
+3.5 意向学员列表查询(要查出开关字段)
+http://localhost:8080/xppspring/aaYXstudent?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+    "message": "信息值：成功",
+    "qingqiu": "list查询列表",
+    "data": [
+        {
+            "uuid": "edit9001",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa","moneyRate":"aaa"
+        },
+	{
+            "uuid": "edit9002",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa","moneyRate":"aaa"
+        }
+    ]
+}
+
+
+
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+
+0131新增开关接口
+
+
+-------------------------------------------------------------
+
+2 开关
+
+http://localhost:8080/xppspring/aaYXstudent?qqiu=on_off
+
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"open"}
+
+或者
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"close"}
+
+----------------------
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已打开","qingqiu":"on"}
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已关闭","qingqiu":"off"}
+
+
+status:200 OK
+{"message":"操作失败：开关参数不规范(close)，联系前端开发","qingqiu":"err"}
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+新接口 7.10 学号修改
+http://localhost:8080/xppspring/aaYXstudent?qqiu=editstuID
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+    "uuid":"31a92e3e-83a8-460e-92dd-97698b99f9ca",
+    "studentID":001
+
+}
+
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+新接口 7.11  查询数据库里最大学号
+http://localhost:8080/xppspring/aaYXstudent?qqiu=getMaxStuID
+
+请求方法:GET
+
+响应：
+status:200 OK
+
+{
+    "message": "查询学号成功",
+    "qingqiu": "学号查询",
+    "data": [
+        {
+            "studentID": 300
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+

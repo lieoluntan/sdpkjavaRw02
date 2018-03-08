@@ -1,0 +1,178 @@
+*************************************************************
+YXcrm
+7、部门访问地址
+xppspring
+
+命名：
+web.xml中：
+/aaDepartment   对应  aaDepartmentN
+
+包名：com.YXcrm.controller.DepartmentController
+
+DepartmentController
+
+DepartmentService
+DepartmentServiceImpl
+
+DepartmentDao
+DepartmentDaoImpl
+
+7.0 部门测试
+http://localhost:8080/xppspring/aaDepartment?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 部门新增
+http://localhost:8080/YXcrm/aaDepartment?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+"name":"aaa","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 部门删除
+http://localhost:8080/YXcrm/aaDepartment?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+7.3 部门修改
+http://localhost:8080/YXcrm/aaDepartment?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+-------------------------------------------------------------
+
+
+7.4 部门单个查询
+http://localhost:8080/YXcrm/aaDepartment?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+
+}
+
+
+-------------------------------------------------------------
+
+3.5 部门列表查询
+http://localhost:8080/YXcrm/aaDepartment?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+0131新增开关接口
+
+
+-------------------------------------------------------------
+
+2 开关
+
+http://localhost:8080/YXcrm/aaDepartment?qqiu=on_off
+
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"open"}
+
+或者
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"close"}
+
+----------------------
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已打开","qingqiu":"on"}
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已关闭","qingqiu":"off"}
+
+
+status:200 OK
+{"message":"操作失败：开关参数不规范(close)，联系前端开发","qingqiu":"err"}
