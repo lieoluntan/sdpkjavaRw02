@@ -44,7 +44,9 @@ Content-Type: application/json;charset=UTF-8
 请求主体:
 
 {
-"ditchUuid":"aaa","recordDate":"2018-01-20","remarkText":"aaa"
+"ditchUuid":"aaa","recordDate":"2018-01-20","remarkText":"aaa",
+    "userUuid":"aaa",
+    "userName":"AAA"
 }
 
 响应：
@@ -61,7 +63,9 @@ http://localhost:8080/QDcrm/aaRecord?qqiu=delete
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"uu001"}
+{"uuid":"uu001",
+    "userUuid":"aaa",
+    "userName":"AAA"}
 
 响应：
 status:200 OK
@@ -79,7 +83,9 @@ http://localhost:8080/QDcrm/aaRecord?qqiu=deleteByDitchUid
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"ditchUuid":"uu001"}
+{"ditchUuid":"uu001",
+    "userUuid":"aaa",
+    "userName":"AAA"}
 
 响应：
 status:200 OK
@@ -97,7 +103,9 @@ Content-Type: application/json;charset=UTF-8
 请求主体:
 {
 "uuid":"edit9001",
-"recordDate":"2018-01-02","remarkText":"aaa"
+"recordDate":"2018-01-02","remarkText":"aaa",
+    "userUuid":"aaa",
+    "userName":"AAA"
 }
 
 响应：
