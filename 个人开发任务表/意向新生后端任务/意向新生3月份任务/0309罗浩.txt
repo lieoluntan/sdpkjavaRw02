@@ -10,3 +10,5 @@ YXjava20180308-2: 意向学员getlist方法，返回的列表数据sql语句，增加排序，按照学号
 
 
 YXjava20180308-3: record表完善deleteByYxstudent、listByYxstudent方法 (计划时间3小时)
+
+YXjava20180308-5: 渠道项目(QDcrm)在对record对象进行增删改的操作，同时记录到日志表LogGx中(计划时间3小时)
