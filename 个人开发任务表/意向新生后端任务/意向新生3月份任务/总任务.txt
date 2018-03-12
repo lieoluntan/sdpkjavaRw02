@@ -19,7 +19,6 @@ YXjava20180312-2:转为正式学员功能。
 
 
 
-YXjava20180312-3:xppspring项目Department部门调整使用注解方式
 
 
 YXjava20180312-4:xppspring项目意向学员调整使用注解方式
