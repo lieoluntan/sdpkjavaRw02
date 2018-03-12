@@ -1,5 +1,5 @@
 *************************************************************
-YXcrm
+xppspring
 7、部门访问地址
 xppspring
 
@@ -7,7 +7,7 @@ xppspring
 web.xml中：
 /aaDepartment   对应  aaDepartmentN
 
-包名：com.YXcrm.controller.DepartmentController
+包名：com.xppspring.controller.DepartmentController
 
 DepartmentController
 
@@ -34,7 +34,7 @@ status:200 OK
 -------------------------------------------------------------
 
 7.1 部门新增
-http://localhost:8080/YXcrm/aaDepartment?qqiu=add
+http://localhost:8080/xppspring/aaDepartment?qqiu=add
 
 请求方法:POST
 
@@ -53,7 +53,7 @@ status:200 OK
 -------------------------------------------------------------
 
 7.2 部门删除
-http://localhost:8080/YXcrm/aaDepartment?qqiu=delete
+http://localhost:8080/xppspring/aaDepartment?qqiu=delete
 
 请求方法:POST
 
@@ -69,7 +69,7 @@ status:200 OK
 -------------------------------------------------------------
 
 7.3 部门修改
-http://localhost:8080/YXcrm/aaDepartment?qqiu=edit
+http://localhost:8080/xppspring/aaDepartment?qqiu=edit
 
 请求方法:POST
 
@@ -89,7 +89,7 @@ status:200 OK
 
 
 7.4 部门单个查询
-http://localhost:8080/YXcrm/aaDepartment?qqiu=getOne
+http://localhost:8080/xppspring/aaDepartment?qqiu=getOne
 
 请求方法:POST
 
@@ -113,7 +113,7 @@ status:200 OK
 -------------------------------------------------------------
 
 3.5 部门列表查询
-http://localhost:8080/YXcrm/aaDepartment?qqiu=list
+http://localhost:8080/xppspring/aaDepartment?qqiu=list
 
 请求方法:GET
 
@@ -145,7 +145,7 @@ status:200 OK
 
 2 开关
 
-http://localhost:8080/YXcrm/aaDepartment?qqiu=on_off
+http://localhost:8080/xppspring/aaDepartment?qqiu=on_off
 
 
 请求方法:POST
