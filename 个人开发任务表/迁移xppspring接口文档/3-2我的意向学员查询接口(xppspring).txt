@@ -1,0 +1,80 @@
+
+******************************************************
+接口开发人：谢平平
+更新日期：2018-02-01
+******************************************************
+
+xppspring
+
+
+我的意向学员
+MyYXstudent
+
+1 我的意向学员列表查询（指的是前台传负责人empUuid，后台去查这个empUuid的所有意向学员数据）
+
+命名：
+备注：写在查询包query里,实体类还是用Ditch查询
+web.xml中：
+/aaMyYXstudent   对应servletmapping名：  aaMyYXstudentN
+
+包名：com.QDcrm.query.controller.MyYXstudentController
+
+MyYXstudentController
+
+MyYXstudentService
+MyYXstudentServiceImpl
+
+MyYXstudentDao
+MyYXstudentDaoImpl
+
+
+
+http://localhost:8080/xppspring/aaMyYXstudent?qqiu=list&&empUuid=e001
+
+关系说明：通过empUuid查t_ditch，查出这个empUuid的所有意向学员
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+响应：
+status:200 OK
+{
+    "message": "信息值：成功",
+    "qingqiu": "list查询列表",
+    "data": [
+        {
+            "uuid": "edit9001",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa"
+        },
+	{
+            "uuid": "edit9002",
+            "name": "aaa",
+            "sex": "aaa",
+            "phone": "aaa",
+            "weixin": "aaa",
+            "company": "aaa",
+            "job": "aaa",
+            "empUuid": "aaa",
+            "empName": "员工A",
+            "openAndclose": "aaa",
+            "rank": "aaa",
+            "source": "aaa",
+            "remark": "aaa"
+        }
+    ]
+}

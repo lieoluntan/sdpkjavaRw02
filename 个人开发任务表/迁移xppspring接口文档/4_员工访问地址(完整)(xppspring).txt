@@ -1,0 +1,140 @@
+
+
+xppspring
+
+
+*************************************************************
+4、员工访问地址
+http://localhost:8080/xppspring/3a1.html
+
+4.0 员工测试
+http://localhost:8080/xppspring/aaEmp?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+4.1 员工新增
+http://localhost:8080/xppspring/aaEmp?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"name":"bbb","empNum":"a","phone":"a","depart":"a","job":"a","permissionTempl":"a","course":"a","remark":"a","claTeacher":"aa"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","content":["689c363b-4215-4f93-85d9-9b236877a509"]}
+-------------------------------------------------------------
+
+
+4.2 员工删除
+http://localhost:8080/xppspring/aaEmp?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除"}
+-------------------------------------------------------------
+
+4.3 员工修改
+http://localhost:8080/xppspring/aaEmp?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123","empNum":"aaa","phone":"aaa","depart":"aaa",
+"job":"aaa","remark":"aaa","claTeacher":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data"edit9001"]}
+
+-------------------------------------------------------------
+
+4.4 员工单个查询
+http://localhost:8080/xppspring/aaEmp?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","oddNum":"aaa","stuUuid":"aaaID","campus":"aaa school","account":"aaa grade","operator":"aaa phone","fee":"aaa date","feeType":"aaa parentName","feeMode":"aaa parentPhone","itemName":"aaa address","amount":"aaa remark"}]
+
+}
+
+-------------------------------------------------------------
+
+4.5 员工列表查询
+http://localhost:8080/xppspring/aaEmp?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","oddNum":"a","stuUuid":"a","campus":"a","account":"a"}]
+}
+
+-------------------------------------------------------------
+
+4.5 员工班主任查询
+http://localhost:8080/xppspring/aaEmp?qqiu=claTeaList
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","oddNum":"a","stuUuid":"a","campus":"a","account":"a"}]
+}
