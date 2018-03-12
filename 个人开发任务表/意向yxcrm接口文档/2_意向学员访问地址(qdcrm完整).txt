@@ -67,7 +67,7 @@ Content-Type: application/json;charset=UTF-8
     "rank":"aaa",
     "source":"aaa",
     "courseYX":"aaa",
-    "studentID": 001,
+    "studentID": "001",
     "userUuid":"aaa",
     "userName":"AAA"
     
@@ -133,7 +133,7 @@ Content-Type: application/json;charset=UTF-8
     "rank":"aaac",
     "source":"aaac",
     "courseYX":"aaac",
-    "studentID":001,
+    "studentID":"001",
     "userUuid":"aaa",
     "userName":"AAA"
 
