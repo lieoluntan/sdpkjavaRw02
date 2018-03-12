@@ -1,3 +1,20 @@
 
 YXjava20180312-1:（意向新生系统）意向学员模块(t_YXstudent)表，增加别名字段，别名字段由学号与姓名拼接获得，新增、编辑方法完成对别名字段的写入，
 list查询方法，也把别名字段查询出来。
+
+
+YXjava20180312-3:xppspring项目Department部门调整使用注解方式
+
+YXjava20180312-4:xppspring项目意向学员调整使用注解方式
+
+YXjava20180312-5:xppspring项目、员工、 调整使用注解方式
+
+YXjava20180312-6:xppspring项目、跟踪记录表、 调整使用注解方式
+
+
+YXjava20180312-7:xppspring项目、手机号表、 调整使用注解方式
+
+
+YXjava20180312-8:xppspring项目、微信表 调整使用注解方式
+
+完成度 ： 100%
