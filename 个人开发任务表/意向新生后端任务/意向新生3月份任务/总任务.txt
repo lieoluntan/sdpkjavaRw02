@@ -19,3 +19,7 @@ list查询方法，也把别名字段查询出来。
 
 YXjava20180312-2:转为正式学员功能。
 
+
+
+YXjava20180312-3:xppspring项目Department部门调整使用注解方式
+
