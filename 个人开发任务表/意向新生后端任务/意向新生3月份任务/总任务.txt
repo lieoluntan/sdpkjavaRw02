@@ -23,3 +23,18 @@ YXjava20180312-2:转为正式学员功能。
 
 YXjava20180312-3:xppspring项目Department部门调整使用注解方式
 
+
+YXjava20180312-4:xppspring项目意向学员调整使用注解方式
+
+YXjava20180312-5:xppspring项目、员工、 调整使用注解方式
+
+YXjava20180312-6:xppspring项目、跟踪记录表、 调整使用注解方式
+
+
+YXjava20180312-7:xppspring项目、手机号表、 调整使用注解方式
+
+
+YXjava20180312-8:xppspring项目、微信表 调整使用注解方式
+
+
+
