@@ -112,7 +112,7 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 {
-    "uuid":"31a92e3e-83a8-460e-92dd-97698b99f9ca",
+    "uuid":"4b042466-0261-410b-a6ab-3978d523c363",
     "name":"aaac",
     "sex":"aaac",
     "phone":"aaac",
@@ -133,7 +133,7 @@ Content-Type: application/json;charset=UTF-8
     "rank":"aaac",
     "source":"aaac",
     "courseYX":"aaac",
-    "studentID":"001",
+    "studentID":"5",
     "userUuid":"aaa",
     "userName":"AAA"
 
@@ -291,9 +291,10 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 {
-    "uuid":"31a92e3e-83a8-460e-92dd-97698b99f9ca",
-    "studentID":001
-
+    "uuid":"4b042466-0261-410b-a6ab-3978d523c363",
+    "name":"test",
+    "studentID":"3"
+    
 }
 
 
