@@ -1,0 +1,6 @@
+6_学生日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
+
+7_record关系日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
+
+
+8、在springMvc 中引入Junit4 测试类
