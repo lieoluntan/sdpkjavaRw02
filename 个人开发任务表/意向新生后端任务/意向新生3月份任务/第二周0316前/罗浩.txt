@@ -1,0 +1,12 @@
+3_1跟踪记录表访问地址(补充查询接口) --------对应的 controller  层、service层，dao层  换成注解形式
+
+
+3-2我的意向学员查询接口(xppspring)  --------对应的 controller  层、service层，dao层  换成注解形式完成)
+
+1_部门访问地址(xppspring完整)----写Junit4 测试类
+
+2_意向学员访问地址(xppspring完整)----写Junit4 测试类
+
+3_0跟踪记录表访问地址(xppspring完整)----写Junit4 测试类
+
+3_1跟踪记录表访问地址(补充查询接口) ----写Junit4 测试类
