@@ -1,0 +1,5 @@
+工作任务：更改xppspring项目的employee，record，yxstudent为注解形式，查找页面bug，熟悉          火狐浏览器中的http插件
+
+         毕书富 完成进度：已完成 
+
+          日期：3月14号
