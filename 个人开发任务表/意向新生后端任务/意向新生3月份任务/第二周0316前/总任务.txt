@@ -17,9 +17,7 @@
 
 5_1微信号码表访问地址(xppspring完整) --------对应的 controller  层、service层，dao层  换成注解形式
 
-6_学生日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
 
-7_record关系日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
 
 
 8、在xppspring项目中引入Junit4 测试类
@@ -43,9 +41,7 @@
 
 5_1微信号码表访问地址(xppspring完整) ----写Junit4 测试类
 
-6_学生日志访问地址(xppspring完整) ----写Junit4 测试类
 
-7_record关系日志访问地址(xppspring完整)  ----写Junit4 测试类
 
 *****************************任务部分三************************************************
 
@@ -56,3 +52,16 @@
 二-3 sdpk排课系统，排课写入日志记录
 
 二-4 sdpk排课系统，合同操作之后，写入日志记录
+
+
+
+********备注任务（暂时不做）**********************
+
+6_学生日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
+
+7_record关系日志访问地址(xppspring完整)--------对应的 controller  层、service层，dao层  换成注解形式
+
+
+6_学生日志访问地址(xppspring完整) ----写Junit4 测试类
+
+7_record关系日志访问地址(xppspring完整)  ----写Junit4 测试类
