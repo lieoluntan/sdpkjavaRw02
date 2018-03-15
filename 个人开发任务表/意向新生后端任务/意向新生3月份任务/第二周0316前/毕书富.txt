@@ -4,3 +4,13 @@
 
 
 8、在springMvc 中引入Junit4 测试类
+
+3_1跟踪记录表访问地址(补充查询接口) ----写Junit4 测试类
+
+3-2我的意向学员查询接口(xppspring) ----写Junit4 测试类
+
+4_员工访问地址(完整)(xppspring)----写Junit4 测试类
+
+5_0手机号码表访问地址(xppspring完整)(xppspring) ----写Junit4 测试类
+
+5_1微信号码表访问地址(xppspring完整) ----写Junit4 测试类
