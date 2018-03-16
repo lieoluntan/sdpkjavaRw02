@@ -102,7 +102,7 @@ Content-Type: application/json;charset=UTF-8
 
 响应：
 status:200 OK
-{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+{"message":"信息值：成功","qingqiu":"add新增","data":["uu001"]}
 
 说明：排课系统 dataGxUuid 字段暂时不用，备用字段
 -------------------------------------------------------------
