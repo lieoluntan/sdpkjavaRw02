@@ -1,0 +1,40 @@
+
+
+7、班级列表访问地址
+xppspring
+xppspring
+
+命名：
+web.xml中：
+/aaClaName  对应servletmapping名：  aaClaNameN
+
+路径名：com.sdpk.queryOpen.controller.ClaNameController
+
+ClaNameController
+
+ClaNameService
+ClaNameServiceImpl
+
+ClaNameDao
+ClaNameDaoImpl
+
+
+
+3.4 班级列表查询(只需要查出uuid字段和name字段)
+http://localhost:8080/sdpk/aaClaName?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","name":"a"},{"uuid":"b","name":"b"}]
+}
