@@ -1,0 +1,42 @@
+
+老师
+老师
+7、老师列表访问地址
+
+TeacherName
+TeacherName
+
+命名：
+web.xml中：
+/aaTeacherName  对应servletmapping名：  aaTeacherNameN
+
+路径名：com.sdpk.queryOpen.controller.TeacherNameController
+
+TeacherNameController
+
+TeacherNameService
+TeacherNameServiceImpl
+
+TeacherNameDao
+TeacherNameDaoImpl
+
+
+
+3.4 老师列表查询(只需要查出uuid字段和name字段)
+http://localhost:8080/sdpk/aaTeacherName?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"a","name":"a"},{"uuid":"b","name":"b"}]
+}
