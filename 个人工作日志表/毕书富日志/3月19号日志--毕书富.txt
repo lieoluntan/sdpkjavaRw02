@@ -1,0 +1,5 @@
+工作任务：意向新生系统从前台获取createPeople字段，写入跟踪表，然后查询接口返回增加该	  	  字段，渠道    项目同样增加对createPeople的写入和读取。在Ditch 的insert方法里加	  上对createDate  字段的写入， 在    record表的insert方法里加上对 modifyDate 字段	  的写入,然后在Ditch的  getlist方法增加 createDate、    modifyDate  字段的返回.给渠道日志加一个批量删除的方法
+	  
+         毕书富 完成进度：已完成 
+
+          日期：3月19号
