@@ -82,5 +82,27 @@ status:200 OK
 
 -------------------------------------------------------------
 
+7.2 日志批量删除
+http://localhost:8080/YXcrm/aaLogGX?qqiu=deleteBatch
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+  "uuidList":["A","Aa","B"]
+}
+
+
+
+
+
+响应：
+status:200 OK
+{"message":"信息值：成功删除3条数据","qingqiu":"delete批量删除","data":[信息值：成功删除3条数据]}
+
 
 -------------------------------------------------------------
