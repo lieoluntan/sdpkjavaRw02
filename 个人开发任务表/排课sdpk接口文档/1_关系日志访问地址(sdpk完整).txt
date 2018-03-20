@@ -126,11 +126,6 @@ Content-Type: application/json;charset=UTF-8
 
 
 
-[
-{"uuid":"uu001"},
-{"uuid":"uu001"},
-{"uuid":"uu001"}
-]
 
 
 
