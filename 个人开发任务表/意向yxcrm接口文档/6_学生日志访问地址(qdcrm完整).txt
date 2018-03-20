@@ -138,15 +138,8 @@ status:200 OK
 
 -------------------------------------------------------------
 
-0131新增开关接口
-
-
--------------------------------------------------------------
-
-2 开关
-
-http://localhost:8080/YXcrm/aaLogstu?qqiu=on_off
-
+7.2 日志批量删除
+http://localhost:8080/YXcrm/aaLogstu?qqiu=deleteBatch
 
 请求方法:POST
 
@@ -154,25 +147,18 @@ http://localhost:8080/YXcrm/aaLogstu?qqiu=on_off
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"open"}
 
-或者
-
-请求主体:
-{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"close"}
-
-----------------------
+{
+  "uuidList":["A","Aa","B"]
+}
 
 
-响应：
-status:200 OK
-{"message":"操作成功：已打开","qingqiu":"on"}
+
 
 
 响应：
 status:200 OK
-{"message":"操作成功：已关闭","qingqiu":"off"}
+{"message":"信息值：成功删除3条数据","qingqiu":"delete批量删除","data":[信息值：成功删除3条数据]}
 
 
-status:200 OK
-{"message":"操作失败：开关参数不规范(close)，联系前端开发","qingqiu":"err"}
+-------------------------------------------------------------
