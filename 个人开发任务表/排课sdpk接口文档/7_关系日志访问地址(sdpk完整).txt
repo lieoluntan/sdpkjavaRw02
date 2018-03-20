@@ -1,0 +1,176 @@
+*************************************************************
+sdpk
+sdpk
+
+7、日志访问地址
+LogGX
+
+命名：
+web.xml中：
+/aaLogGX   对应  aaLogGXN
+
+包名：com.sdpk.controller.LogGXController
+
+LogGXController
+
+LogGXService
+LogGXServiceImpl
+
+LogGXDao
+LogGXDaoImpl
+
+7.0 日志测试
+http://localhost:8080/sdpk/aaLogGX?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+7.2 日志删除
+http://localhost:8080/sdpk/aaLogGX?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+
+
+-------------------------------------------------------------
+
+3.5 日志列表查询
+http://localhost:8080/sdpk/aaLogGX?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：做参考
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+7.2 日志新增
+http://localhost:8080/sdpk/aaLogGX?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"userUuid":"aaa","userName":"aaa","tableName":"aaa","tableNameChina":"aaa","dataUuid":"aaa","dataName":"aaa","userAction":"aaa","updateTime":"aaa","dataGxChina":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["uu001"]}
+
+说明：排课系统 dataGxUuid 字段暂时不用，备用字段
+-------------------------------------------------------------
+
+
+
+
+7.2 日志批量删除
+http://localhost:8080/sdpk/aaLogGX?qqiu=deleteBatch
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+  "uuidList":["A","Aa","B"]
+}
+
+
+
+
+
+
+响应：
+status:200 OK
+{"message":"信息值：成功删除3条数据","qingqiu":"delete批量删除","data":[信息值：成功删除3条数据]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
