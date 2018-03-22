@@ -1,0 +1,56 @@
+*************************************************************
+
+7、跟踪记录表分页查询地址
+
+sdpk
+
+sdpk
+
+命名：
+web.xml中：
+/aaQuePageRecord   对应  aaQuePageRecordN
+
+包名：com.sdpk.queryOpen.controller.QuePageRecordController
+
+QuePageRecordController
+
+QuePageRecordService
+QuePageRecordServiceImpl
+
+QuePageRecordDao
+QuePageRecordDaoImpl
+
+-------------------------------------------------------------
+
+7.5 跟踪记录表列表查询(根据日期recordDate排序降序)
+http://localhost:8080/sdpk/aaQuePageRecord?qqiu=pageBystuUid
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+{
+
+"stuUuid":"u001",
+"currentPage":"1",
+"maxResult":"1"
+
+}
+
+
+响应：
+status:200 OK
+{
+"message":"数据库总共页数：38",
+"qingqiu":"158",
+"data":[{"uuid":"edit9001","stuUuid":"aaa123","stuName":"学生A","recordDate":"aaa","remarkText":"aaa"},{"uuid":"edit9001","stuUuid":"aaa123","stuName":"学生A","recordDate":"aaa","remarkText":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+说明："qingqiu":"158",数据库里总共的数据条数 158条

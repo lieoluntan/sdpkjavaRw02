@@ -1,0 +1,61 @@
+
+学生学号
+学生学号
+7、学生学号列表访问地址
+
+studentID
+studentID
+
+命名：
+web.xml中：
+/aastudentID  对应servletmapping名：  aastudentIDN
+
+路径名：com.sdpk.queryOpen.controller.studentIDController
+
+studentIDController
+
+studentIDService
+studentIDServiceImpl
+
+studentIDDao
+studentIDDaoImpl
+
+
+新接口 7.10 学号修改
+http://localhost:8080/sdpk/aastudentID?qqiu=editstuID
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+    "uuid":"4b042466-0261-410b-a6ab-3978d523c363",
+    "name":"test",
+    "studentID":"3"
+    
+}
+
+
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+
+新接口 7.11  查询数据库里最大学号
+http://localhost:8080/sdpk/aastudentID?qqiu=getMaxStuID
+
+请求方法:GET
+
+响应：
+status:200 OK
+
+{
+    "message": "查询学号成功",
+    "qingqiu": "学号查询",
+    "data": [
+        {
+            "studentID": 300
+        }
+    ]
+}
