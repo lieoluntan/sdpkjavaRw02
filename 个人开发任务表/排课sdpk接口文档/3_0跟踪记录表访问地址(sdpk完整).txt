@@ -76,7 +76,7 @@ status:200 OK
 
 -------------------------------------------------------------
 
-7.2.2 跟踪记录表删除（根据ditchUuid）***************
+7.2.2 跟踪记录表删除（根据stuUuid）***************
 http://localhost:8080/sdpk/aaRecord?qqiu=deleteByYxstuUid
 
 请求方法:POST
