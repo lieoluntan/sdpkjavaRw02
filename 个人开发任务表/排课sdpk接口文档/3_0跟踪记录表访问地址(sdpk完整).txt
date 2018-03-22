@@ -46,7 +46,7 @@ Content-Type: application/json;charset=UTF-8
 ÇëÇóÖ÷Ìå:
 
 {
-"yxstuUuid":"aaac","recordDate":"2018-01-20","remarkText":"aaa",
+"stuUuid":"aaac","recordDate":"2018-01-20","remarkText":"aaa",
     "userUuid":"aaa",
     "userName":"AAA"
 }
