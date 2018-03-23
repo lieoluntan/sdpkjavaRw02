@@ -1,0 +1,193 @@
+*************************************************************
+
+7、一键登陆直播访问地址
+sdlive
+sdlive
+
+命名：
+web.xml中：
+/aaGoTalk   对应  aaGoTalkN
+
+包名：com.sdlive.controller.GoTalkController
+
+GoTalkController
+
+GoTalkService
+GoTalkServiceImpl
+
+GoTalkDao
+GoTalkDaoImpl
+
+7.0 一键登陆直播测试
+http://localhost:8080/sdlive/aaGoTalk?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 一键登陆直播新增
+http://localhost:8080/sdlive/aaGoTalk?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+{
+
+    "name":"aaa",
+    "username":"zhagn3",
+    "usertype":"2",
+    "ts":"2018-05-20 14:12:45",
+    "userpassword":"a12345",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
+}
+
+
+说明：(domain)在实体类中给了默认值，(auth)校验码(由key+ts+serial+usertype)拼接后进行MD5加密生成，
+ (serialTalk)(pid)(autoopenav)这3个字段在实体类中给了默认值
+(servername)要调用教育系统第3方接口后台获取
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 一键登陆直播删除
+http://localhost:8080/sdlive/aaGoTalk?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+7.3 一键登陆直播修改
+http://localhost:8080/sdlive/aaGoTalk?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+-------------------------------------------------------------
+
+
+7.4 一键登陆直播单个查询
+http://localhost:8080/sdlive/aaGoTalk?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+
+}
+
+
+-------------------------------------------------------------
+
+3.5 一键登陆直播列表查询
+http://localhost:8080/sdlive/aaGoTalk?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+0131新增开关接口
+
+
+-------------------------------------------------------------
+
+2 开关
+
+http://localhost:8080/sdlive/aaGoTalk?qqiu=on_off
+
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"open"}
+
+或者
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"close"}
+
+----------------------
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已打开","qingqiu":"on"}
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已关闭","qingqiu":"off"}
+
+
+status:200 OK
+{"message":"操作失败：开关参数不规范(close)，联系前端开发","qingqiu":"err"}
