@@ -28,7 +28,7 @@ TeaKeXiaoDaoImpl
 ******************************************************
 老师月课查询：
 
-http://localhost:8080/sdpk/aaTeaKeXiao?qqiu=list&stuUuid=5df38a36-707b-487b-aa3a-55ae3df3dc0a&year=2018&&month=02&&today=2018-02-03
+http://localhost:8080/sdpk/aaTeaKeXiao?qqiu=list&empUuid=5df38a36-707b-487b-aa3a-55ae3df3dc0a&year=2018&&month=02&&today=2018-02-03
 
 请求方法：Get
 
@@ -43,7 +43,7 @@ http://localhost:8080/sdpk/aaTeaKeXiao?qqiu=list&stuUuid=5df38a36-707b-487b-aa3a
 
 
 
-老师月课查询：
+所有老师月课查询：
 
-http://localhost:8080/sdpk/aaTeaKeXiao?qqiu=list&stuUuid=allGet&year=2018&&month=01&&today=2018-01-03
+http://localhost:8080/sdpk/aaTeaKeXiao?qqiu=list&empUuid=allGet&year=2018&&month=01&&today=2018-01-03
 }
