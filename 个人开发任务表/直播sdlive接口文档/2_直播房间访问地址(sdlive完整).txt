@@ -1,0 +1,195 @@
+*************************************************************
+
+7、直播房间访问地址
+sdlive
+sdlive
+
+命名：
+web.xml中：
+/aaTalkRoom   对应  aaTalkRoomN
+
+包名：com.sdlive.controller.TalkRoomController
+
+TalkRoomController
+
+TalkRoomService
+TalkRoomServiceImpl
+
+TalkRoomDao
+TalkRoomDaoImpl
+
+7.0 直播房间测试
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=test
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"aa":"1","bb":"2"}
+
+响应：
+status:200 OK
+{"message":"信息值：默认","qingqiu":"请求值：默认"}
+-------------------------------------------------------------
+
+7.1 直播房间新增
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=add
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+{
+
+    "roomNameTalk":"aaa",
+    "roomtypeTalk":"2",
+    "starttimeTalk":"2018-03-20 14:12:45",
+    "endtimeTalk":"2018-05-20 14:12:45",
+    "chairmanpwd":"a12345",
+    "assistantpwd":"b12345",
+    "patrolpwd":"c12345",
+    "passwordrequired":"1",
+    "confuserpwd":"ss12345"
+
+}
+
+
+说明：(keyTalk)在实体类中给了默认值，(serialTalk)要调用教育系统预约房间号接口返回获取，
+ (videotype)(videoframerate)(autoopenav)这3个字段在实体类中给了默认值
+(confusernum)可以不填
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
+-------------------------------------------------------------
+
+7.2 直播房间删除
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=delete
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"uu001"}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+-------------------------------------------------------------
+
+7.3 直播房间修改
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=edit
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{
+"uuid":"edit9001",
+"name":"aaa123","remark":"aaa"
+}
+
+响应：
+status:200 OK
+{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+-------------------------------------------------------------
+
+
+7.4 直播房间单个查询
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=getOne
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"edit9001"}
+
+响应：
+status:200 OK
+{
+
+"message":"信息值：成功",
+"qingqiu":"getOne查询单条记录",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+
+}
+
+
+-------------------------------------------------------------
+
+3.5 直播房间列表查询
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=list
+
+请求方法:GET
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+
+
+响应：
+status:200 OK
+{
+"message":"信息值：成功",
+"qingqiu":"list查询列表",
+"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+}
+
+
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+0131新增开关接口
+
+
+-------------------------------------------------------------
+
+2 开关
+
+http://localhost:8080/sdlive/aaTalkRoom?qqiu=on_off
+
+
+请求方法:POST
+
+请求头:
+Content-Type: application/json;charset=UTF-8
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"open"}
+
+或者
+
+请求主体:
+{"uuid":"12d24424-cd2a-478c-b3a1-b6da27152f6a","openAndclose":"close"}
+
+----------------------
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已打开","qingqiu":"on"}
+
+
+响应：
+status:200 OK
+{"message":"操作成功：已关闭","qingqiu":"off"}
+
+
+status:200 OK
+{"message":"操作失败：开关参数不规范(close)，联系前端开发","qingqiu":"err"}
