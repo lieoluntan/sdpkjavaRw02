@@ -1,24 +1,25 @@
 *************************************************************
+
+7、一键登陆直播访问地址
 sdlive
-7、部门访问地址
 sdlive
 
 命名：
 web.xml中：
-/aaDepartment   对应  aaDepartmentN
+/aaGoTalk   对应  aaGoTalkN
 
-包名：com.sdlive.controller.DepartmentController
+包名：com.sdlive.controller.GoTalkController
 
-DepartmentController
+GoTalkController
 
-DepartmentService
-DepartmentServiceImpl
+GoTalkService
+GoTalkServiceImpl
 
-DepartmentDao
-DepartmentDaoImpl
+GoTalkDao
+GoTalkDaoImpl
 
-7.0 部门测试
-http://localhost:8080/sdlive/aaDepartment?qqiu=test
+7.0 一键登陆直播测试
+http://localhost:8080/sdlive/aaGoTalk?qqiu=test
 
 请求方法:POST
 
@@ -33,8 +34,8 @@ status:200 OK
 {"message":"信息值：默认","qingqiu":"请求值：默认"}
 -------------------------------------------------------------
 
-7.1 部门新增
-http://localhost:8080/sdlive/aaDepartment?qqiu=add
+7.1 一键登陆直播新增
+http://localhost:8080/sdlive/aaGoTalk?qqiu=add
 
 请求方法:POST
 
@@ -43,17 +44,31 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 
+
 {
-"name":"aaa","remark":"aaa"
+
+    "name":"aaa",
+    "username":"zhagn3",
+    "usertype":"2",
+    "ts":"2018-05-20 14:12:45",
+    "userpassword":"a12345",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
 }
+
+
+说明：(domain)在实体类中给了默认值，(auth)校验码(由key+ts+serial+usertype)拼接后进行MD5加密生成，
+ (serialTalk)(pid)(autoopenav)这3个字段在实体类中给了默认值
+(servername)要调用教育系统第3方接口后台获取
 
 响应：
 status:200 OK
 {"message":"信息值：成功","qingqiu":"add新增","data":["b871a880-b501-46e5-95a9-b009c69b270a"]}
 -------------------------------------------------------------
 
-7.2 部门删除
-http://localhost:8080/sdlive/aaDepartment?qqiu=delete
+7.2 一键登陆直播删除
+http://localhost:8080/sdlive/aaGoTalk?qqiu=delete
 
 请求方法:POST
 
@@ -67,9 +82,9 @@ Content-Type: application/json;charset=UTF-8
 status:200 OK
 {"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
 -------------------------------------------------------------
-78d7a030-b5b5-493e-b9b9-5a7fd8d5d264
-7.3 部门修改
-http://localhost:8080/sdlive/aaDepartment?qqiu=edit
+
+7.3 一键登陆直播修改
+http://localhost:8080/sdlive/aaGoTalk?qqiu=edit
 
 请求方法:POST
 
@@ -88,8 +103,8 @@ status:200 OK
 -------------------------------------------------------------
 
 
-7.4 部门单个查询
-http://localhost:8080/sdlive/aaDepartment?qqiu=getOne
+7.4 一键登陆直播单个查询
+http://localhost:8080/sdlive/aaGoTalk?qqiu=getOne
 
 请求方法:POST
 
@@ -112,8 +127,8 @@ status:200 OK
 
 -------------------------------------------------------------
 
-3.5 部门列表查询
-http://localhost:8080/sdlive/aaDepartment?qqiu=list
+3.5 一键登陆直播列表查询
+http://localhost:8080/sdlive/aaGoTalk?qqiu=list
 
 请求方法:GET
 
@@ -145,7 +160,7 @@ status:200 OK
 
 2 开关
 
-http://localhost:8080/sdlive/aaDepartment?qqiu=on_off
+http://localhost:8080/sdlive/aaGoTalk?qqiu=on_off
 
 
 请求方法:POST
