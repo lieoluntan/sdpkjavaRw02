@@ -93,8 +93,15 @@ Content-Type: application/json;charset=UTF-8
 
 请求主体:
 {
-"uuid":"edit9001",
-"name":"aaa123","remark":"aaa"
+    "uuid":"uu001",
+    "name":"aaa",
+    "username":"zhagn3",
+    "usertype":"2",
+    "ts":"2018-05-20 14:12:45",
+    "userpassword":"a12345",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
 }
 
 响应：
@@ -120,7 +127,28 @@ status:200 OK
 
 "message":"信息值：成功",
 "qingqiu":"getOne查询单条记录",
-"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+"data":[
+{
+    "uuid":"uu001",
+    "name":"aaa",
+    "urlRemark":"aaa",
+    "openAndclose":"aaa",
+    
+    "domain":"uu001",
+    "serialTalk":"uu001",
+    "username":"zhagn3",
+    "usertype":"2",
+    "pid":"uu001",
+    "ts":"2018-05-20 14:12:45",
+    "auth":"aaa",
+    "userpassword":"a12345",
+    "servername":"uu001",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
+}
+
+]
 
 }
 
@@ -143,7 +171,46 @@ status:200 OK
 {
 "message":"信息值：成功",
 "qingqiu":"list查询列表",
-"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+"data":[
+{
+    "uuid":"uu001",
+    "name":"aaa",
+    "urlRemark":"aaa",
+    "openAndclose":"aaa",
+    
+    "domain":"uu001",
+    "serialTalk":"uu001",
+    "username":"zhagn3",
+    "usertype":"2",
+    "pid":"uu001",
+    "ts":"2018-05-20 14:12:45",
+    "auth":"aaa",
+    "userpassword":"a12345",
+    "servername":"uu001",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
+},
+{
+    "uuid":"uu001",
+    "name":"aaa",
+    "urlRemark":"aaa",
+    "openAndclose":"aaa",
+    
+    "domain":"uu001",
+    "serialTalk":"uu001",
+    "username":"zhagn3",
+    "usertype":"2",
+    "pid":"uu001",
+    "ts":"2018-05-20 14:12:45",
+    "auth":"aaa",
+    "userpassword":"a12345",
+    "servername":"uu001",
+    "extradata":"urlencode",
+    "jumpurl":"crm.shudailaoshi.com"
+
+}
+]
 }
 
 
