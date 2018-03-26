@@ -78,11 +78,11 @@ http://localhost:8080/sdlive/aaTalkRoom?qqiu=delete
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"uu001"}
+{"serial":"1001"}
 
 响应：
 status:200 OK
-{"message":"信息值：成功","qingqiu":"delete删除","data":["uu001"]}
+{"message":"删除成功","qingqiu":"房间删除成功","data":["1001"]}
 -------------------------------------------------------------
 
 7.3 直播房间修改
@@ -94,14 +94,30 @@ http://localhost:8080/sdlive/aaTalkRoom?qqiu=edit
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
+
+
 {
-"uuid":"edit9001",
-"name":"aaa123","remark":"aaa"
+    "serial":"1001",
+    "roomNameTalk":"aaa",
+    "roomtypeTalk":"2",
+    "starttimeTalk":"2018-03-20 14:12:45",
+    "endtimeTalk":"2018-05-20 14:12:45",
+    "chairmanpwd":"a12345",
+    "assistantpwd":"b12345",
+    "patrolpwd":"c12345",
+    "passwordrequired":"1",
+    "confuserpwd":"ss12345"
+
 }
+
+
+说明：(keyTalk)在实体类中给了默认值，(serialTalk)要调用教育系统预约房间号接口返回获取，
+ (videotype)(videoframerate)(autoopenav)这3个字段在实体类中给了默认值
+(confusernum)可以不填
 
 响应：
 status:200 OK
-{"message":"信息值：成功","qingqiu":"edit修改","data":["uu001"]}
+{"message":"修改成功","qingqiu":"edit修改","data":["1001"]}
 -------------------------------------------------------------
 
 
@@ -114,7 +130,7 @@ http://localhost:8080/sdlive/aaTalkRoom?qqiu=getOne
 Content-Type: application/json;charset=UTF-8
 
 请求主体:
-{"uuid":"edit9001"}
+{"serial":"1001"}
 
 响应：
 status:200 OK
@@ -122,7 +138,31 @@ status:200 OK
 
 "message":"信息值：成功",
 "qingqiu":"getOne查询单条记录",
-"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+"data":[
+
+{
+    "uuid":"uu001",
+    "urlRemark":"uu001",
+    "openAndclose":"aaa",
+    "serial":"1001",
+    "roomNameTalk":"aaa",
+    "roomtypeTalk":"2",
+    "starttimeTalk":"2018-03-20 14:12:45",
+    "endtimeTalk":"2018-05-20 14:12:45",
+    "chairmanpwd":"a12345",
+    "assistantpwd":"b12345",
+    "patrolpwd":"c12345",
+    "passwordrequired":"1",
+    "confuserpwd":"ss12345",
+    "videotype":"ss12345",
+    "videoframerate":"ss12345",
+    "confusernum":"ss12345",
+    "autoopenav":"ss12345"
+    
+
+}
+
+]
 
 }
 
@@ -145,7 +185,49 @@ status:200 OK
 {
 "message":"信息值：成功",
 "qingqiu":"list查询列表",
-"data":[{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"},{"uuid":"edit9001","name":"aaa123","remark":"aaa"}]
+"data":[{
+    "uuid":"uu001",
+    "urlRemark":"uu001",
+    "openAndclose":"aaa",
+    "serial":"1001",
+    "roomNameTalk":"aaa",
+    "roomtypeTalk":"2",
+    "starttimeTalk":"2018-03-20 14:12:45",
+    "endtimeTalk":"2018-05-20 14:12:45",
+    "chairmanpwd":"a12345",
+    "assistantpwd":"b12345",
+    "patrolpwd":"c12345",
+    "passwordrequired":"1",
+    "confuserpwd":"ss12345",
+    "videotype":"ss12345",
+    "videoframerate":"ss12345",
+    "confusernum":"ss12345",
+    "autoopenav":"ss12345"
+    
+
+},{
+    "uuid":"uu001",
+    "urlRemark":"uu001",
+    "openAndclose":"aaa",
+    "serial":"1001",
+    "roomNameTalk":"aaa",
+    "roomtypeTalk":"2",
+    "starttimeTalk":"2018-03-20 14:12:45",
+    "endtimeTalk":"2018-05-20 14:12:45",
+    "chairmanpwd":"a12345",
+    "assistantpwd":"b12345",
+    "patrolpwd":"c12345",
+    "passwordrequired":"1",
+    "confuserpwd":"ss12345",
+    "videotype":"ss12345",
+    "videoframerate":"ss12345",
+    "confusernum":"ss12345",
+    "autoopenav":"ss12345"
+    
+
+}
+
+]
 }
 
 
